@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1440px;
+    overflow-x:hidden ;
+}
+/* Header */
+
+.fnav{
+    width: 100%;
+    color: white;
+    background-color: rgb(64, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.left-fnav img{
+    width: 150px;
+}
+.left-fnav input{
+    width: 350px;
+    text-align: center;
+    padding: 3px 0;
+}
+.left-fnav{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+    align-items: center;
+}
+/* Righr First nav */
+
+.right-fnav{
+    margin-right: 50px;
+    display: flex;
+    gap: 30px;
+}
+.right-fnav button{
+    padding: 4px 10px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.right-fnav button:hover{
+    background-color: rgb(231, 51, 51);
+    border: 1px solid red;
+}
+.right-fnav img{
+    width: 30px;
+   filter:
+         invert(100%)
+         contrast(102%);
+   cursor: pointer;
+}
+/* Secnod Navigation */
+
+.snav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+.snav ul li{
+    list-style: none;
+}
+.snav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.snav ul li a:hover{
+    text-decoration: underline;
+    font-weight: 800;
+}
+.left-snav ul{
+    display: flex;
+    gap: 30px;
+    margin-left:30px ;
+}
+
+.right-snav ul{
+    display: flex;
+    margin-right: 30px;
+    gap: 30px;
+}
+/* Main */
+main img{
+    width: 100%;
+}
+
+/* Rec-conationar */
+.rec-conationar{
+    text-align: center;
+    margin-top: 20px;
+}
+.Recommended-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.Recommended-image img{
+   width: 220px;
+   border-radius: 10px;
+   box-sizing: 1px 1px 3px 3px rgb(218, 213, 213);
+  transition: 0.2s ease-in-out;
+}
+.Recommended-image img:hover{
+    box-shadow: 10px 10px 10px rgb(130, 127, 127);
+    transition: 0.2s ease-in-out;
+}
+.small-conationar{
+    margin: 20px 0;
+    width: 100%;
+    /* overflow: hidden; */
+    text-align: center;
+}
+.small-conationar img{
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+/* event-conationar */
+.event-conationar{
+    text-align: center;
+}
+.Events-image{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 30px;
+}
+.Events-image img{
+    border-radius: 10px;
+    width: 270px;
+    cursor: pointer;
+   box-shadow: 1px 1px 2px 3px rgb(242, 240, 240);
+   transition: 0.2s ease-in-out;
+}
+.Events-image img:hover{
+    box-shadow: 10px 10px 10px 10px gray;
+    transition: 0.2s ease-in-out;
+}
+
+/* prem-conationar */
+
+.prem-conationar{
+    margin-top: 30px;
+    width: 100%;
+   min-height:500px ;
+    background-color: black;
+    color: white;
+    text-align: start;
+}
+.prem-conationar .text{
+    margin-left: 20px;
+}
+.prem-conationar .text h2{
+    padding: 15px 0;
+}
+.prem-conationar .text h3{
+    margin-top: 40px;
+}
+.Premeire-image{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    gap: 30px;
+}
+.Premeire-image img{
+    width: 220px;
+    border-radius: 10px;
+    cursor: pointer;
+   box-shadow: 1px 1px 2px 0px rgb(243, 238, 238);
+   transition: 0.2s ease-in-out;
+}
+.Premeire-image img:hover{
+    box-shadow: 10px 10px 10px 10px rgb(72, 67, 67);
+    transition: 0.2s ease-in-out;
+}
+
+/* footer */
+
+footer{
+   height: 150px;
+   width: 100%;
+   background-color: antiquewhite;
+   text-align: center;
+}
+footer img{
+    border-top: 2px solid gray;
+    margin-top: 20px;
+    width: 150px;
+}
+footer .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+footer .icon img{
+    border-top: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* Media Quary */
+@media(max-width:1024px){
+    .Recommended-image img{
+        width: 180px;
+     }
+
+     .Events-image img{
+        width: 200px;
+    }
+    .prem-conationar{
+        min-height:450px ;
+    }
+    .Premeire-image img{
+        width: 170px;
+    }
+}
+
+@media(max-width:768px){
+    .Recommended-image img{
+        width: 230px;
+     }
+    .left-fnav input{
+       display: none;
+    }
+    .Premeire-image img{
+        width: 220px;
+    }
+    .snav{
+        display: none;
+    }
+    .Events-image img{
+        width: 250px;
+    }
+} 
+
+@media(max-width:426px){
+    .right-fnav button{
+        display: none;
+  }
+
+}
