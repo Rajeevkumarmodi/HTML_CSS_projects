@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding-inline: 100px;
+    padding-block: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manu ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.buyBtn {
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 0, 208);
+    color: white;
+    cursor: pointer;
+}
+
+.hero-section {
+    height: 100%;
+    width: 100vw;
+    background: url("/assists/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.access {
+    margin-block: 20px;
+    padding: 8px 15px;
+    border: none;
+    background-color: rgb(255, 0, 208);
+    border-radius: 6px;
+    color: white;
+}
