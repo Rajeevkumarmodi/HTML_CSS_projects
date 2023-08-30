@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.screen-size {
+    width: 100%;
+    margin: auto;
+}
+
+.large-screen,
+.laptop,
+.tablet,
+.mobile {
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (min-width:0px) {
+    .mobile {
+        display: block;
+    }
+
+    .large-screen {
+        display: none;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    body {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .mobile {
+        display: none;
+    }
+
+    .large-screen {
+        display: none;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+
+    body {
+        background-color: rgb(0, 145, 255);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .mobile {
+        display: none;
+    }
+
+    .large-screen {
+        display: none;
+    }
+
+    .laptop {
+        display: block;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+
+    body {
+        background-color: rgb(0, 255, 55);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .mobile {
+        display: none;
+    }
+
+    .large-screen {
+        display: block;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+
+    body {
+        background-color: rgb(255, 0, 204);
+    }
+}
